@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aula11</string>
+    <string name="title_activity_contatct">ContatctActivity</string>
+    <string name="title_activity_contato">ContatoActivity</string>
+</resources>

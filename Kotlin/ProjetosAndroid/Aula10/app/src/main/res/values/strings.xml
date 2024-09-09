@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aula10</string>
+    <string name="title_activity_folha">FolhaActivity</string>
+    <string name="title_activity_contato">ContatoActivity</string>
+</resources>
