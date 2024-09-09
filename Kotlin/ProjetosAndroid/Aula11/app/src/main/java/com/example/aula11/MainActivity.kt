@@ -8,6 +8,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -23,6 +24,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.aula11.ui.theme.Aula11Theme
@@ -53,11 +55,16 @@ fun FormLogin(){
             onValueChange ={usuario = it},
             label = { Text(text = "Usuário")} )
 
+        Spacer(modifier = Modifier.fillMaxWidth())
+
         TextField(modifier = Modifier.fillMaxWidth(),
             value = senha,
             onValueChange = {senha = it},
-            label = { Text(text = "Senha")} )
-        
+            label = { Text(text = "Senha")},
+            visualTransformation = PasswordVisualTransformation())
+
+        Spacer(modifier = Modifier.fillMaxWidth())
+
         Button(modifier = Modifier.fillMaxWidth(),
             onClick = {
             when {
